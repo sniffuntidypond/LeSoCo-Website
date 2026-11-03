@@ -179,8 +179,9 @@ header.apple-nav {
 .apple-hero-cta-group {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.25rem;
   margin-top: 1.5rem;
 }
 
@@ -246,6 +247,84 @@ header.apple-nav {
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Apple Index Standalone Hero (Matches Picture 1)
+   ========================================================================== */
+.apple-index-hero {
+  position: relative;
+  flex: 1;
+  min-height: calc(100vh - 52px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+  background-color: var(--apple-black);
+}
+
+.apple-index-hero-inner {
+  position: relative;
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apple-index-eyebrow {
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+
+.apple-index-headline-wrap {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.apple-index-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(3.8rem, 12.5vw, 9.8rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  opacity: 0.12;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1;
+}
+
+.apple-index-headline-wrap .apple-hero-headline {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .hero-br {
+    display: none;
+  }
 }
 
 /* ==========================================================================
