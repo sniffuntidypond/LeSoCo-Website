@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Releases &amp; Changelog — LeSoCo Kinematics</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23000000%22/><text x=%2250%22 y=%2266%22 font-family=%22-apple-system,BlinkMacSystemFont,SF Pro Display,sans-serif%22 font-weight=%22700%22 font-size=%2252%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>L</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Apple Sticky Sub-Navigation -->
+  <header class="apple-nav">
+    <div class="apple-nav-inner">
+      <a href="index.html" class="apple-nav-brand">
+        <span class="title">LeSoCo</span>
+        <span class="subtitle">Release Notes</span>
+      </a>
+      <nav class="apple-nav-menu">
+        <a href="index.html">Overview</a>
+        <a href="studio.html">Studio</a>
+        <a href="recording.html">Recording</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="annotations.html">Annotations</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="upcoming.html">Upcoming</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="releases.html" class="active">Releases</a>
+        <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-pill-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Watermark Hero Section -->
+    <section class="apple-feature-hero">
+      <div class="apple-hero-watermark">RELEASES</div>
+      <div class="apple-container">
+        <span class="apple-eyebrow-white">VERSION HISTORY &bull; FULL CHANGELOG</span>
+        <h1 class="apple-feature-headline">Every release. Every milestone.</h1>
+        <p class="apple-feature-desc">
+          Follow the complete development journey of LeSoCo—from our earliest builds and annotation tools through motion editing, RAW IMU telemetry, and Version 1.3.
+        </p>
+      </div>
+    </section>
+
+    <!-- Changelog Timeline Section -->
+    <section class="apple-container">
+      <div class="releases-timeline">
+
+        <!-- ================= Version 1.3 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card latest">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.3</h2>
+                <span class="release-tag">Latest Milestone</span>
+              </div>
+              <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="release-download-link">
+                GitHub Release &rarr;
+              </a>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Capabilities</div>
+            <ul class="release-list">
+              <li>
+                <strong>Transitions for Camera Perspective:</strong> Added smooth transitions when orbiting and switching annotation camera viewpoints.
+              </li>
+              <li>
+                <strong>Coach &amp; Trainee Split View Function (Alpha release):</strong>
+                <ul class="release-nested-list">
+                  <li>Dedicated dual split screen to review trainee and coach motion side-by-side.</li>
+                  <li>Opens up an independent comparison screen to watch synchronous kinematic motion.</li>
+                  <li>Added height alignment and athlete scaling controls.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Standalone Desktop Executable (.exe):</strong>
+                <ul class="release-nested-list">
+                  <li>Added ability to launch LeSoCo directly from a compiled <code>.exe</code> file for faster, simpler access without requiring Unity editor launch.</li>
+                  <li>Starting from LeSoCo v1.3, an <code>.exe</code> will be deployed with every release onwards.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Motion Editor (Alpha release 4):</strong>
+                <ul class="release-nested-list">
+                  <li>Overhauled UI to make the timeline editing workflow simpler and more intuitive.</li>
+                  <li>Space bar shortcut now toggles start and stop motion playback.</li>
+                  <li>Motion state automatically resets when initiating a new session, and cleanly terminates on exit.</li>
+                  <li>
+                    Cleaned up top bar title: removed <em>"LeSoCo Resolve"</em> and replaced it with dynamic clip title display (removed redundant <em>"Active"</em> clip label).
+                    <img src="images/v1-3-active-clip-badge.png" alt="Clip Title Display" class="release-media-inline-badge" />
+                  </li>
+                  <li>Replaced cumbersome <em>"In"</em> and <em>"Out"</em> buttons with a streamlined single <strong>CUT</strong> button.</li>
+                  <li>Removed cluttered legacy panels: <em>"Media Pool"</em>, <em>"Timeline"</em>, and <em>"Inspector"</em> for a cleaner workspace.</li>
+                </ul>
+                <div class="release-media-preview">
+                  <img src="images/v1-3-video-editor-timeline.png" alt="LeSoCo Motion Editor Interface Preview" />
+                  <div class="release-media-caption">LeSoCo Motion Editor: Multi-track timeline, transitions, and keyframe inspection.</div>
+                </div>
+              </li>
+              <li>
+                <strong>Automated Motion Detection System (Alpha release 2):</strong> Enhanced automated detection and alignment for motion phases.
+              </li>
+              <li>
+                <strong>Official Website Launch:</strong> Implemented comprehensive product website showcasing features, documentation, and roadmap.
+              </li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed a bug where the motion editor <em>"browse .lsc file"</em> dialog opened the OS file explorer twice.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.10 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.10</h2>
+                <span class="release-tag feature">Feature Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>
+                <strong>Motion Editor Refinements (Alpha release 3):</strong>
+                <ul class="release-nested-list">
+                  <li>Officially renamed video editor to <strong>"Motion Editor"</strong> across all menus.</li>
+                  <li>Aligned Motion Editor styling to match the primary Coach Session UI design language.</li>
+                  <li>Users can now import motion recordings directly from the coach session UI or local disk.</li>
+                  <li>Added animated loading screen between view transitions.</li>
+                  <li>Live visual playback of recorded motion inside the editor with an accurate timecode counter.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Four-Stage Motion Detection:</strong> Implemented automated detection system to identify key athletic phases: run-up, preparation, ball contact/kick, and follow-through.
+                <ul class="release-nested-list">
+                  <li>Added synchronized comparison system matching coach and trainee key moments across all four phases.</li>
+                </ul>
+              </li>
+              <li>Added Motion Editor walkthrough section to the interactive onboarding tutorial.</li>
+              <li>Safety guard: Resetting the scene while adding or editing an annotation now triggers a confirmation prompt to prevent data loss.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.9 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.9</h2>
+                <span class="release-tag">Alpha Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>
+                <strong>Video Editor Evolution (Alpha release 2):</strong>
+                <ul class="release-nested-list">
+                  <li>Simplified workflow focused strictly on trimming unnecessary motion captures.</li>
+                  <li>Migrated exported file format from <code>.avi</code> video to native <code>.lsc</code> kinematics data for seamless playback in LeSoCo.</li>
+                </ul>
+              </li>
+              <li>Added persistent toggle button in Zen mode to unhide all UI overlays on demand.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed a bug where clicking directly on an annotation marker caused it to disappear.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.8 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.8</h2>
+                <span class="release-tag">Alpha Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>
+                <strong>Introduced Video Editor (Alpha release 1):</strong>
+                <ul class="release-nested-list">
+                  <li>Added dedicated scene for video and motion clip editing.</li>
+                  <li>In/Out trimming handles and quick-save functionality.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Coach vs. Trainee Mode Toggle:</strong>
+                <ul class="release-nested-list">
+                  <li>Coach mode renders the solid character model; Trainee mode displays the ghost character overlay.</li>
+                </ul>
+              </li>
+              <li>Added toast notification confirming motion data has been saved successfully.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed camera orbit jitter when moving camera angles quickly.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.7 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.7</h2>
+                <span class="release-tag">Refinement</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>Refined RAW IMU vs. polished IMU telemetry filtering.</li>
+              <li>Switched to manual motion save prompt to prevent uncontrolled storage usage.</li>
+              <li>Added ability to re-edit published annotations and adjust published camera viewpoints.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Hidden bent joint degree indicators when not in diagnostic mode.</li>
+              <li>Hidden ghost trainee model while operating in coach mode.</li>
+              <li>Fixed motion capture playback failure in new sessions.</li>
+              <li>Fixed character root transform failing to reset after playback from prior session.</li>
+              <li>Resolved persistent issues with RESET button not starting fresh session.</li>
+              <li>Fixed record button becoming unresponsive on new sessions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.6 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.6</h2>
+                <span class="release-tag bugfix">Bug Fix Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>RAW IMU vs. polished IMU beta release 2.</li>
+              <li>Tutorial updated with steps for toggling UI visibility.</li>
+              <li>Bounded UI layout prevents dialogs from stretching beyond screen borders.</li>
+              <li>Motion analytics calculation engine updated to evaluate shoulder and arm kinematics.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed bug allowing playback while actively typing an annotation text box.</li>
+              <li>Fixed reset button failing to start a clean session state.</li>
+              <li>Fixed timer failing to start upon record button activation in new sessions.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.5 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.5</h2>
+                <span class="release-tag feature">Feature Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>
+                <strong>Interactive Tutorial Level:</strong> Onboarding sequence teaching UI controls, with skip option.
+              </li>
+              <li>RAW IMU vs. polished IMU telemetry beta release.</li>
+              <li>Added dedicated reset session button and dedicated pause button.</li>
+              <li>Complete UI visual overhaul for cleaner contrast.</li>
+              <li>Removed freehand drawing annotation tool in favor of structured 3D spatial markers.</li>
+              <li>Restricted "Tag Pose" feature so identical poses cannot be tagged twice on the same keyframe.</li>
+              <li>Safety guard: Play button disabled when no motion data is present.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed guide modal dimming effect appearing behind tutorial elements.</li>
+              <li>Prevented double-clicking the record button from corrupting the active capture session.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.4 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.4</h2>
+                <span class="release-tag feature">Feature Release</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>Implemented and tested native <code>.lsc</code> kinematics data format.</li>
+              <li>Motion now starts playing instantly upon clicking the Play control.</li>
+              <li>Record button now records the motion currently in progress.</li>
+              <li>Implemented initial RAW IMU vs. polished IMU telemetry algorithms.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed bug preventing JVC jog-shuttle control panel from closing.</li>
+              <li>Fixed bug where two timeline scrub bars appeared simultaneously.</li>
+              <li>Resolved Sony Mocopi connection issue with Unity by adding a top menu bar connector.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.3 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.3</h2>
+                <span class="release-tag">Core Update</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>
+                <strong>Timeline Integration:</strong> Coaches can scrub seamlessly across all recorded takes and keyframe notes.
+              </li>
+              <li>
+                <strong>Save &amp; Load Session State:</strong> Ability to save and reload kinematics sessions across multiple days.
+              </li>
+              <li>Camera auto-focus zooms to numbered note markers in 3D space.</li>
+              <li>Numbered annotations can only be created when valid notes exist.</li>
+              <li>Character automatically returns to standing stance upon replaying motion.</li>
+            </ul>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Fixed scaling on small UI elements and corrected speedometer telemetry reading.</li>
+              <li>Notes now automatically billboard to face the active camera direction.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.2.1 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.2.1</h2>
+                <span class="release-tag bugfix">Patch</span>
+              </div>
+            </div>
+
+            <div class="release-section-title fixes">Bug Fixes</div>
+            <ul class="release-list fixes">
+              <li>Bug fixes for v1.2.1 and v1.2.2 annotation system.</li>
+              <li>Fixed annotations floating away into random coordinates when moving the camera.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.2 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.2</h2>
+                <span class="release-tag">Annotation Update</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>Continuation of annotation update: added functional circle and star drawing shapes.</li>
+              <li>Introduced 3D pinned annotations: coaches can attach notes directly to 3D space.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2.1 ================= -->
+        <article class="release-entry">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2.1</h2>
+                <span class="release-tag">Annotation System</span>
+              </div>
+            </div>
+
+            <div class="release-section-title features">New Features &amp; Improvements</div>
+            <ul class="release-list">
+              <li>Interactive pen cursor activation on UI buttons.</li>
+              <li>Drawable trajectory lines on viewport.</li>
+              <li>First-generation annotation toolbox: Pen, Eraser, and Arrow pointer tools.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.2 ================= -->
+        <article class="release-entry legacy">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.2</h2>
+                <span class="release-tag">UI Foundation</span>
+              </div>
+            </div>
+            <ul class="release-list">
+              <li>Comprehensive user interface overhaul and baseline kinematic display panels.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.1 ================= -->
+        <article class="release-entry legacy">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.1</h2>
+                <span class="release-tag">Initial Iteration</span>
+              </div>
+            </div>
+            <ul class="release-list">
+              <li>Initial framework improvements and kinematic integration updates.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ================= Version 1.0 ================= -->
+        <article class="release-entry legacy">
+          <div class="release-marker">
+            <div class="release-dot"></div>
+          </div>
+          <div class="release-card">
+            <div class="release-header">
+              <div class="release-meta">
+                <h2 class="release-version">Version 1.0</h2>
+                <span class="release-tag">Initial Release</span>
+              </div>
+            </div>
+            <ul class="release-list">
+              <li>Initial release of the LeSoCo kinematics motion analysis platform.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Bottom Callout -->
+      <div class="apple-download-banner">
+        <span class="apple-eyebrow-white">LESOCO CONTINUOUS DELIVERY</span>
+        <h2 class="apple-download-headline">Experience the latest build.</h2>
+        <p class="apple-download-desc">
+          Download the latest compiled release or explore our upcoming roadmap milestones.
+        </p>
+        <div class="apple-hero-cta-group" style="justify-content: center; margin-top: 2rem;">
+          <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-btn-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download on GitHub
+          </a>
+          <a href="roadmap.html" class="apple-btn-cta-secondary">
+            View Roadmap &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="apple-footer">
+    <div class="apple-container">
+      <div class="apple-footer-note">
+        * LeSoCo version 1.3 is currently in active development. Coming in end November.
+      </div>
+      <div class="apple-footer-bottom">
+        <div>Copyright &copy; <span id="year"></span> LeSoCo Inc. All rights reserved.</div>
+        <div class="apple-footer-links">
+          <a href="index.html">Overview</a>
+          <a href="studio.html">Studio</a>
+          <a href="recording.html">Recording</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="annotations.html">Annotations</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="upcoming.html">Upcoming</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="releases.html">Releases</a>
+          <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
