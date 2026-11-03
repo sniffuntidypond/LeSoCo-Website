@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeSoCo v1.3 — LeSoCo's Biggest Update Yet</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23000000%22/><text x=%2250%22 y=%2266%22 font-family=%22-apple-system,BlinkMacSystemFont,SF Pro Display,sans-serif%22 font-weight=%22700%22 font-size=%2252%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>L</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Apple Sticky Sub-Navigation -->
+  <header class="apple-nav">
+    <div class="apple-nav-inner">
+      <a href="index.html" class="apple-nav-brand">
+        <span class="title">LeSoCo</span>
+        <span class="subtitle">Version 1.3</span>
+      </a>
+      <nav class="apple-nav-menu">
+        <a href="index.html" class="active">Overview</a>
+        <a href="studio.html">Studio</a>
+        <a href="recording.html">Recording</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="annotations.html">Annotations</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="upcoming.html">Upcoming</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-pill-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Apple Scrollytelling Hero (Matches Screenshots 1, 2, 3, 4) -->
+    <section class="apple-scrolly-track" id="scrollyTrack">
+      <div class="apple-scrolly-sticky">
+        <!-- Giant Watermark Backdrop (like PROLED XDR in Screenshot 1) -->
+        <div class="scrolly-watermark" id="scrollyWatermark">LESOCO 1.3</div>
+
+        <!-- Intro Text (headline, description, link - fades out as you scroll) -->
+        <div class="scrolly-text-group" id="scrollyText">
+          <div class="apple-eyebrow">LESOCO KINEMATICS &bull; VERSION 1.3</div>
+          <h1 class="apple-hero-headline">LeSoCo's biggest update yet.</h1>
+          <p class="apple-hero-description">
+            Work in Progress. Come back in a few months to see <strong>LeSoCo version 1.3</strong>.
+            Engineered from the ground up for Sony Mocopi and multi-IMU sensor rigs, LeSoCo combines breakthrough 3D kinematics playback with real-time biomechanical analysis and tactile coaching controls.
+          </p>
+          <div class="apple-hero-cta-group">
+            <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-btn-cta">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download on GitHub
+            </a>
+            <a href="roadmap.html" class="apple-btn-cta-secondary">
+              View Roadmap ↗
+            </a>
+            <a href="studio.html" class="apple-link" style="margin-left: 0.5rem;">
+              Explore Studio ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Hardware Laptop / Studio Display (rises, centers, and scales up to fill screen like in Screenshots 2, 3, 4) -->
+        <div class="scrolly-device-container" id="scrollyDevice">
+          <div class="scrolly-laptop-frame">
+            <div class="scrolly-laptop-screen">
+              <img src="images/studio-workspace.png" alt="LeSoCo Studio 4K Workspace" />
+              <div class="scrolly-screen-glow" id="screenGlow"></div>
+            </div>
+            <div class="scrolly-laptop-base">
+              <div class="scrolly-notch"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Hint Pill -->
+        <div class="scrolly-scroll-hint" id="scrollyHint" onclick="window.scrollBy({ top: window.innerHeight * 1.2, behavior: 'smooth' });">
+          <span>Scroll to animate</span>
+          <span class="scroll-arrow">&darr;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apple Two-Card Feature Carousel (Matches Screenshot 2) -->
+    <section class="apple-cards-section reveal-on-scroll" id="features">
+      <div class="apple-container">
+        <div class="apple-carousel-wrapper">
+          <div class="apple-cards-track" id="cardsTrack">
+            <!-- Card 1 -->
+            <a href="recording.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/recording-dashboard.png" alt="Recording Dashboard with JVC Shuttle" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Tactile Jog-Shuttle.</strong> Experience broadcast-caliber scrubbing across dual Coach and Trainee streams from -5x rewind up to 5x fast-forward with zero latency.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="analytics.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/motion-analytics.png" alt="Motion Analytics Panel" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Biomechanical Analytics.</strong> Real-time angular comparison tracks shoulder alignment and arm elevation with sub-degree accuracy alongside automated posture evaluation.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="annotations.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/annotation-toolbox.png" alt="Annotation Toolbox" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Instant Annotation.</strong> Freeze keyframes with a single keystroke, append diagnostic suffixes, and save coach commentary directly to the motion stream.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="timeline.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/timeline-scrubber.png" alt="Kinematic Timeline and IMU" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Timeline &amp; Raw IMU.</strong> Frame-by-frame scrubbing with keyframe bookmarking and direct access to uncompressed 9-axis sensor telemetry.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 5 (Upcoming Split-Screen) -->
+            <a href="upcoming.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/dual-motion-analysis.png" alt="Dual Motion Split Screen Analysis" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Upcoming: Split-Screen Review.</strong> Our upcoming 50/50 dual review mode pairs trainee motions against coach benchmarks with locked 3D camera orbiting and temporal offset calibration.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 6 (Upcoming 3D Avatar) -->
+            <a href="upcoming.html" class="apple-card">
+              <div class="apple-card-media">
+                <img src="images/avatar-athlete.png" alt="High Resolution 3D Humanoid Athlete Avatar" />
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Photorealistic Humanoid Rigs.</strong> High-fidelity athletic character models with realistic ambient illumination for intuitive rotational joint perception.
+                </p>
+              </div>
+            </a>
+
+            <!-- Card 7 (Living Roadmap on Monograph) -->
+            <a href="roadmap.html" class="apple-card">
+              <div class="apple-card-media" style="background: radial-gradient(circle at 50% 50%, rgba(0, 113, 227, 0.28) 0%, #0d0d0f 75%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+                <span class="apple-monograph-badge" style="margin-bottom: 0.65rem;">LIVE ON MONOGRAPH</span>
+                <span style="font-size: 1.65rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em;">Living Roadmap</span>
+                <span style="font-size: 0.82rem; font-family: var(--font-mono); color: var(--apple-blue-link); margin-top: 0.45rem;">monogr.ph/s/4Dr8yxLzxa ↗</span>
+              </div>
+              <div class="apple-card-content">
+                <p class="apple-card-text">
+                  <strong>Living Roadmap.</strong> Track feature releases from Version 1.3 into real-time multi-IMU synchronization, AI posture diagnostics, and collaborative review on Monograph.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Apple Carousel Navigation Arrows (Matches Screenshot 2) -->
+          <div class="apple-carousel-controls">
+            <button class="apple-circle-btn" id="prevBtn" aria-label="Previous Feature">&larr;</button>
+            <button class="apple-circle-btn" id="nextBtn" aria-label="Next Feature">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apple "Strength in Numbers" Section (Matches Screenshot 3) -->
+    <section class="apple-stats-section reveal-on-scroll">
+      <div class="apple-container">
+        <h2 class="apple-stats-headline">Strength in numbers.</h2>
+        <div class="apple-stats-grid">
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Up to</span>
+            <span class="apple-stat-number">60 FPS</span>
+            <span class="apple-stat-label">real-time kinematic capture</span>
+          </div>
+
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Sub-degree</span>
+            <span class="apple-stat-number">0.1&deg;</span>
+            <span class="apple-stat-label">joint angular precision</span>
+          </div>
+
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Full-body</span>
+            <span class="apple-stat-number">12 IMUs</span>
+            <span class="apple-stat-label">sensor tracking support</span>
+          </div>
+
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Ultra HD</span>
+            <span class="apple-stat-number">4K UHD</span>
+            <span class="apple-stat-label">native 3D studio viewport</span>
+          </div>
+
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Precision scrubbing</span>
+            <span class="apple-stat-number">-5x to +5x</span>
+            <span class="apple-stat-label">JVC jog-shuttle control</span>
+          </div>
+
+          <div class="apple-stat-item">
+            <span class="apple-stat-prefix">Upcoming</span>
+            <span class="apple-stat-number">50 / 50</span>
+            <span class="apple-stat-label">dual split-screen analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Apple Download Banner Callout -->
+    <section class="apple-container reveal-on-scroll">
+      <div class="apple-download-banner">
+        <h2 class="apple-download-headline">Experience LeSoCo.</h2>
+        <p class="apple-download-sub">
+          Download the latest build and clone the source code repository directly from GitHub to begin biomechanical analysis.
+        </p>
+        <div class="apple-download-btns">
+          <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-btn-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download on GitHub ↗
+          </a>
+          <a href="roadmap.html" class="apple-btn-cta-secondary">
+            Explore Roadmap ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Apple Minimalist Footer -->
+  <footer class="apple-footer">
+    <div class="apple-container">
+      <div class="apple-footer-note">
+        * LeSoCo version 1.3 is currently in active development. Coming in end November. Specifications and features are subject to change prior to final release.
+      </div>
+      <div class="apple-footer-bottom">
+        <div>
+          Copyright &copy; <span id="year"></span> LeSoCo Inc. All rights reserved.
+        </div>
+        <div class="apple-footer-links">
+          <a href="index.html">Overview</a>
+          <a href="studio.html">Studio</a>
+          <a href="recording.html">Recording</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="annotations.html">Annotations</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="upcoming.html">Upcoming</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Apple Scrollytelling Animation Engine (Matches Screenshots 1, 2, 3, 4)
+    const scrollyTrack = document.getElementById('scrollyTrack');
+    const scrollyWatermark = document.getElementById('scrollyWatermark');
+    const scrollyText = document.getElementById('scrollyText');
+    const scrollyDevice = document.getElementById('scrollyDevice');
+    const scrollyHint = document.getElementById('scrollyHint');
+    const screenGlow = document.getElementById('screenGlow');
+
+    function updateScrolly() {
+      if (!scrollyTrack) return;
+      const rect = scrollyTrack.getBoundingClientRect();
+      const totalScroll = rect.height - window.innerHeight;
+      if (totalScroll <= 0) return;
+
+      const progress = Math.min(Math.max(-rect.top / totalScroll, 0), 1);
+
+      // Phase 1 (0.0 -> 0.32): Text fades out & drifts up; Watermark scales; Hint fades
+      if (scrollyText) {
+        const textProgress = Math.min(progress / 0.30, 1);
+        scrollyText.style.opacity = Math.max(1 - textProgress * 1.15, 0);
+        scrollyText.style.transform = `translate(-50%, calc(-50% - ${textProgress * 70}px))`;
+        scrollyText.style.pointerEvents = textProgress > 0.8 ? 'none' : 'auto';
+      }
+
+      if (scrollyWatermark) {
+        const wmProgress = Math.min(progress / 0.40, 1);
+        scrollyWatermark.style.opacity = Math.max(0.12 * (1 - wmProgress), 0);
+        scrollyWatermark.style.transform = `translate(-50%, calc(-50% - ${wmProgress * 40}px)) scale(${1 + wmProgress * 0.1})`;
+      }
+
+      if (scrollyHint) {
+        scrollyHint.style.opacity = Math.max(1 - (progress / 0.10), 0);
+        scrollyHint.style.pointerEvents = progress > 0.08 ? 'none' : 'auto';
+      }
+
+      // Phase 2 & 3: Device rises from bottom, centers, then expands crisply to full size
+      if (scrollyDevice) {
+        // Rise to center (42vh -> 0vh)
+        const riseProgress = Math.min(progress / 0.40, 1);
+        const yPos = 42 * (1 - riseProgress);
+
+        // Crisp Retina scaling (0.72 -> 0.95 -> 1.02 max to prevent bilinear blur)
+        let scale = 0.72 + (riseProgress * 0.23);
+        if (progress > 0.40) {
+          const zoomProgress = (progress - 0.40) / 0.60;
+          scale = 0.95 + (zoomProgress * 0.07);
+        }
+
+        scrollyDevice.style.transform = `translate3d(-50%, calc(-50% + ${yPos}vh), 0) scale(${scale})`;
+      }
+
+      if (screenGlow) {
+        const glowProgress = Math.min(Math.max((progress - 0.25) / 0.55, 0), 1);
+        screenGlow.style.opacity = glowProgress * 0.7;
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(updateScrolly);
+    }, { passive: true });
+    window.addEventListener('resize', updateScrolly);
+    updateScrolly();
+
+    // Apple Carousel Horizontal Scroll Controls
+    const track = document.getElementById('cardsTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (track && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        const cardWidth = track.querySelector('.apple-card').offsetWidth + 24;
+        track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        const cardWidth = track.querySelector('.apple-card').offsetWidth + 24;
+        track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    }
+
+    // Reveal-on-Scroll Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

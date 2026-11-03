@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annotation Toolbox — LeSoCo v1.3</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23000000%22/><text x=%2250%22 y=%2266%22 font-family=%22-apple-system,BlinkMacSystemFont,SF Pro Display,sans-serif%22 font-weight=%22700%22 font-size=%2252%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>L</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="apple-nav">
+    <div class="apple-nav-inner">
+      <a href="index.html" class="apple-nav-brand">
+        <span class="title">LeSoCo</span>
+        <span class="subtitle">Annotation Toolbox</span>
+      </a>
+      <nav class="apple-nav-menu">
+        <a href="index.html">Overview</a>
+        <a href="studio.html">Studio</a>
+        <a href="recording.html">Recording</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="annotations.html" class="active">Annotations</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="upcoming.html">Upcoming</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer" class="apple-pill-btn">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="apple-feature-hero">
+      <div class="apple-hero-watermark">ANNOTATION</div>
+      <div class="apple-container">
+        <span class="apple-eyebrow-white">ANNOTATION ENGINE &bull; KEYFRAME TAGGING</span>
+        <h1 class="apple-feature-headline">Mark every milestone.</h1>
+        <p class="apple-feature-desc">
+          Capture high-resolution keyframe snapshots, append descriptive metadata, and save structured coach commentary directly into the motion stream with single-key efficiency.
+        </p>
+      </div>
+    </section>
+
+    <section class="apple-container">
+      <div class="apple-screen-frame" style="max-width: 680px; margin: 1rem auto 4.5rem;">
+        <div class="apple-screen-inner">
+          <img src="images/annotation-toolbox.png" alt="Annotation Toolbox Panel" />
+        </div>
+      </div>
+
+    <section class="apple-container">
+      <div class="apple-content-row">
+        <div class="apple-content-text">
+          <h3>Single-Key Snapshot [O].</h3>
+          <p>
+            Never lose your place during intense video review sessions:
+          </p>
+          <ul>
+            <li><strong>Keyboard Keybinding [O]:</strong> Instantly freezes and snapshots the exact playback frame into memory.</li>
+            <li><strong>Auto-Indexed Identifiers:</strong> Sequentially generates unique IDs (e.g. <code>Motion Clip_Anno_01_</code>) to streamline note-taking.</li>
+            <li><strong>Frame Association:</strong> Metadata is mathematically anchored to the corresponding timeline sample.</li>
+          </ul>
+        </div>
+        <div class="apple-content-media">
+          <img src="images/annotation-toolbox.png" alt="Snapshot button and suffix input" />
+        </div>
+      </div>
+
+      <div class="apple-content-row reversed">
+        <div class="apple-content-text">
+          <h3>Structured Commentary [V].</h3>
+          <p>
+            Communicate technical corrections clearly to students and patients:
+          </p>
+          <ul>
+            <li><strong>Custom Suffix Tags:</strong> Categorize takes with custom labels like <em>"Apex_Angle"</em> or <em>"Early_Release"</em>.</li>
+            <li><strong>Descriptive Notes Box:</strong> Enter detailed paragraphs of coaching observations and biomechanical feedback.</li>
+            <li><strong>Direct Save [V]:</strong> Commit annotations with a single keypress, immediately reflected on the master timeline.</li>
+          </ul>
+        </div>
+        <div class="apple-content-media">
+          <img src="images/annotation-toolbox.png" alt="Save annotation button" />
+        </div>
+      </div>
+
+      <div class="apple-specs-table">
+        <h2 class="apple-specs-title">Toolbox Specifications</h2>
+        <div class="apple-specs-grid">
+          <div class="apple-spec-col">
+            <span class="apple-spec-key">Snapshot Shortcut</span>
+            <span class="apple-spec-val mono">[O] Key</span>
+          </div>
+          <div class="apple-spec-col">
+            <span class="apple-spec-key">Save Annotation Shortcut</span>
+            <span class="apple-spec-val mono">[V] Key</span>
+          </div>
+          <div class="apple-spec-col">
+            <span class="apple-spec-key">Naming Taxonomy</span>
+            <span class="apple-spec-val mono">Prefix + Index + Suffix</span>
+          </div>
+          <div class="apple-spec-col">
+            <span class="apple-spec-key">Metadata Format</span>
+            <span class="apple-spec-val">Embedded .LSC Schema</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="apple-pagination">
+        <a href="analytics.html" class="apple-nav-btn">&larr; Motion Analytics</a>
+        <a href="timeline.html" class="apple-nav-btn">Timeline &amp; IMU &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="apple-footer">
+    <div class="apple-container">
+      <div class="apple-footer-note">
+        * LeSoCo version 1.3 is currently in active development. Coming in end November.
+      </div>
+      <div class="apple-footer-bottom">
+        <div>Copyright &copy; <span id="year"></span> LeSoCo Inc. All rights reserved.</div>
+        <div class="apple-footer-links">
+          <a href="index.html">Overview</a>
+          <a href="studio.html">Studio</a>
+          <a href="recording.html">Recording</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="annotations.html">Annotations</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="upcoming.html">Upcoming</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
