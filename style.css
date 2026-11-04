@@ -204,9 +204,6 @@ header.apple-nav {
 
 .apple-nav-link-btn:hover,
 .apple-nav-link-btn.active,
-.apple-nav-dropdown-item:hover .apple-nav-link-btn,
-.apple-nav-dropdown-item:focus-within .apple-nav-link-btn,
-header.apple-nav:has(.apple-dropdown-menu:hover) .apple-nav-link-btn,
 header.apple-nav.dropdown-open .apple-nav-link-btn {
   color: var(--apple-text-primary);
 }
@@ -220,9 +217,6 @@ header.apple-nav.dropdown-open .apple-nav-link-btn {
   opacity: 0.65;
 }
 
-.apple-nav-dropdown-item:hover .apple-nav-chevron,
-.apple-nav-dropdown-item:focus-within .apple-nav-chevron,
-header.apple-nav:has(.apple-dropdown-menu:hover) .apple-nav-chevron,
 header.apple-nav.dropdown-open .apple-nav-chevron {
   transform: rotate(180deg);
   opacity: 1;
@@ -249,11 +243,6 @@ header.apple-nav.dropdown-open .apple-nav-chevron {
   pointer-events: none;
 }
 
-/* Open on hover / focus without JavaScript (with JS fallback support) */
-header.apple-nav:has(.apple-nav-dropdown-item:hover) .apple-dropdown-menu,
-header.apple-nav:has(.apple-nav-dropdown-item:focus-within) .apple-dropdown-menu,
-header.apple-nav:has(.apple-dropdown-menu:hover) .apple-dropdown-menu,
-.apple-dropdown-menu:hover,
 header.apple-nav.dropdown-open .apple-dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -385,9 +374,6 @@ header.apple-nav.dropdown-open .apple-dropdown-menu {
   pointer-events: none;
 }
 
-body:has(header.apple-nav:has(.apple-nav-dropdown-item:hover)) .apple-dropdown-backdrop,
-body:has(header.apple-nav:has(.apple-nav-dropdown-item:focus-within)) .apple-dropdown-backdrop,
-body:has(header.apple-nav:has(.apple-dropdown-menu:hover)) .apple-dropdown-backdrop,
 body.dropdown-open .apple-dropdown-backdrop {
   opacity: 1;
   visibility: visible;
