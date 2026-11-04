@@ -176,6 +176,221 @@ header.apple-nav {
   transform: scale(0.96);
 }
 
+/* ==========================================================================
+   Apple-Style Mega-Menu Dropdown (Matches Picture 1 Reference)
+   ========================================================================== */
+.apple-nav-dropdown-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.apple-nav-link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  color: var(--apple-text-secondary);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.apple-nav-link-btn:hover,
+.apple-nav-link-btn.active,
+header.apple-nav.dropdown-open .apple-nav-link-btn {
+  color: var(--apple-text-primary);
+}
+
+.apple-nav-link-btn.active {
+  font-weight: 500;
+}
+
+.apple-nav-chevron {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.15s ease;
+  opacity: 0.65;
+}
+
+header.apple-nav.dropdown-open .apple-nav-chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* Full-Width Apple Mega Dropdown Panel */
+.apple-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(22, 22, 23, 0.94);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.25s;
+  z-index: 998;
+  pointer-events: none;
+}
+
+header.apple-nav.dropdown-open .apple-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Dropdown Inner Container */
+.apple-dropdown-inner {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem 3.5rem;
+  display: grid;
+  grid-template-columns: 1.6fr 1.25fr 1.25fr;
+  gap: 3.5rem;
+}
+
+.apple-dropdown-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.apple-dropdown-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--apple-text-secondary);
+  margin-bottom: 0.95rem;
+  user-select: none;
+}
+
+/* Column 1: Large Headline Links (Matches Picture 1 "Explore Mac") */
+.apple-dropdown-list-large {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.apple-dropdown-list-large li a {
+  color: #f5f5f7;
+  font-size: clamp(1.35rem, 1.8vw, 1.65rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.apple-dropdown-list-large li a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.apple-dropdown-list-large li a.active {
+  color: var(--apple-blue-link);
+}
+
+/* Sublinks at the bottom of Column 1 (Matches "Compare Mac" / "Switch from PC to Mac") */
+.apple-dropdown-sublinks {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.apple-dropdown-sublinks a {
+  color: #f5f5f7;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.apple-dropdown-sublinks a:hover {
+  color: var(--apple-blue-link);
+}
+
+/* Column 2 & 3: Secondary Links (Matches Picture 1 "Shop Mac" and "More from Mac") */
+.apple-dropdown-list-secondary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.apple-dropdown-list-secondary li a {
+  color: #f5f5f7;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.15s ease;
+}
+
+.apple-dropdown-list-secondary li a:hover {
+  color: var(--apple-blue-link);
+}
+
+.apple-dropdown-list-secondary li a.active {
+  color: var(--apple-blue-link);
+}
+
+/* Dimmed Backdrop Blur */
+.apple-dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+  z-index: 990;
+  pointer-events: none;
+}
+
+body.dropdown-open .apple-dropdown-backdrop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Responsive Mega Dropdown */
+@media (max-width: 860px) {
+  .apple-dropdown-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1.5rem 2.5rem;
+    max-height: calc(100vh - 65px);
+    overflow-y: auto;
+  }
+}
+
 .apple-hero-cta-group {
   display: flex;
   align-items: center;

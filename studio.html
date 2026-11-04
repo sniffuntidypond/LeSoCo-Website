@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Apple Sticky Sub-Navigation with Mega Dropdown -->
   <header class="apple-nav">
     <div class="apple-nav-inner">
       <a href="index.html" class="apple-nav-brand">
@@ -16,11 +17,12 @@
       </a>
       <nav class="apple-nav-menu">
         <a href="index.html">Overview</a>
-        <a href="studio.html" class="active">Studio</a>
-        <a href="recording.html">Recording</a>
-        <a href="analytics.html">Analytics</a>
-        <a href="annotations.html">Annotations</a>
-        <a href="timeline.html">Timeline</a>
+        <div class="apple-nav-dropdown-item">
+          <button class="apple-nav-link-btn active" id="featuresNavBtn" aria-expanded="false" aria-haspopup="true">
+            Features
+            <svg class="apple-nav-chevron" width="8" height="5" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m1 1 4 4 4-4"/></svg>
+          </button>
+        </div>
         <a href="upcoming.html">Upcoming</a>
         <a href="roadmap.html">Roadmap</a>
         <a href="releases.html">Releases</a>
@@ -30,7 +32,54 @@
         </a>
       </nav>
     </div>
+
+    <!-- Apple Mega-Menu Dropdown (Matches Picture 1) -->
+    <div class="apple-dropdown-menu" id="appleFeaturesDropdown" role="region" aria-label="Features Menu">
+      <div class="apple-dropdown-inner">
+        <!-- Column 1: Explore Features (Large Typography like Picture 1) -->
+        <div class="apple-dropdown-col apple-dropdown-col-main">
+          <span class="apple-dropdown-eyebrow">Explore Features</span>
+          <ul class="apple-dropdown-list-large">
+            <li><a href="studio.html" class="active">Studio</a></li>
+            <li><a href="recording.html">Recording</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="annotations.html">Annotations</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+          </ul>
+          <div class="apple-dropdown-sublinks">
+            <a href="upcoming.html">Compare Trainee &amp; Coach</a>
+            <a href="upcoming.html">Sony Mocopi 12-IMU Support</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Roadmap & Releases (Picture 1 Column 2 style) -->
+        <div class="apple-dropdown-col">
+          <span class="apple-dropdown-eyebrow">Roadmap &amp; Releases</span>
+          <ul class="apple-dropdown-list-secondary">
+            <li><a href="upcoming.html">Upcoming 1.4</a></li>
+            <li><a href="roadmap.html">Living Roadmap</a></li>
+            <li><a href="releases.html">Release Notes v1.3</a></li>
+            <li><a href="upcoming.html">Dual Split-Screen Mode</a></li>
+            <li><a href="upcoming.html">High-Res Humanoid Rigs</a></li>
+            <li><a href="roadmap.html">Monograph Roadmap ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Resources & Support (Picture 1 Column 3 style) -->
+        <div class="apple-dropdown-col">
+          <span class="apple-dropdown-eyebrow">More from LeSoCo</span>
+          <ul class="apple-dropdown-list-secondary">
+            <li><a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer">Download LeSoCo ↗</a></li>
+            <li><a href="https://github.com/sniffuntidypond/LeSoCo.git" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a></li>
+            <li><a href="studio.html">4K Viewport &amp; .LSC Spec</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
+  <div class="apple-dropdown-backdrop" id="appleDropdownBackdrop"></div>
 
   <main>
     <section class="apple-feature-hero">
@@ -173,5 +222,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="dropdown.js"></script>
 </body>
 </html>
