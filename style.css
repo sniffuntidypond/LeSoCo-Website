@@ -1309,32 +1309,9 @@ footer.apple-footer {
 }
 
 .apple-footer-note {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--apple-border-subtle);
-  margin-bottom: 1.5rem;
-  font-size: 0.72rem;
-  line-height: 1.6;
-  color: #86868b;
-}
-
-.apple-footer-disclaimers {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.apple-footer-disclaimers p {
-  margin: 0;
-}
-
-.apple-footer-disclaimers a {
-  color: #a1a1a6;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.apple-footer-disclaimers a:hover {
-  color: #f5f5f7;
+  margin-bottom: 1.25rem;
 }
 
 .apple-footer-bottom {
