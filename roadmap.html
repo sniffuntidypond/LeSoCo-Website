@@ -56,7 +56,7 @@
         <div class="apple-dropdown-col">
           <span class="apple-dropdown-eyebrow">Roadmap &amp; Releases</span>
           <ul class="apple-dropdown-list-secondary">
-            <li><a href="upcoming.html">Upcoming 1.4</a></li>
+            <li><a href="upcoming.html">Upcoming Features</a></li>
             <li><a href="roadmap.html" class="active">Living Roadmap</a></li>
             <li><a href="releases.html">Release Notes v1.3</a></li>
             <li><a href="upcoming.html">Dual Split-Screen Mode</a></li>
@@ -86,10 +86,10 @@
     <section class="apple-feature-hero">
       <div class="apple-hero-watermark">ROADMAP</div>
       <div class="apple-container">
-        <span class="apple-eyebrow-white">LIVING DEVELOPMENT BOARD &bull; UPCOMING MILESTONES</span>
+        <span class="apple-eyebrow-white">LIVING DEVELOPMENT BOARD &bull; UPCOMING MILESTONES &bull; LAST UPDATED: NOVEMBER 12, 2026</span>
         <h1 class="apple-feature-headline">Vision. Trajectory. Velocity.</h1>
         <p class="apple-feature-desc">
-          Track the upcoming development cycle of LeSoCo—spanning Version 1.3.2 through Version 1.4—with targeted features across motion editing, split-screen kinematics, standalone desktop deployments, and website features.
+          Track the upcoming development cycle of LeSoCo—spanning Version 1.3.2 through Version 1.3.5—with targeted features across motion editing, split-screen kinematics, standalone desktop deployments, and website features.
         </p>
       </div>
     </section>
@@ -122,30 +122,72 @@
           <span class="apple-milestone-target">Status: Active Sprint</span>
           <ul class="apple-milestone-list">
             <li>Update version number to <code>1.3.2</code>.</li>
-            <li>Provide a direct, dedicated way for users to cleanly quit the LeSoCo application.</li>
+            <li>User must have a way to quit the LeSoCo application.</li>
+            <li>UI will dynamically shrink according to screen size.</li>
             <li>
-              <strong>Coach &amp; Trainee Split View Function (Alpha release 3):</strong>
+              <strong>Coach and trainee split view function (Release 3):</strong>
               <ul class="roadmap-nested-list">
-                <li>Add a warning prompt if no motion file is imported.</li>
-                <li>Add an animated loading screen during transition from split view to coach UI.</li>
-                <li>Add an unhide UI toggle button when controls are hidden.</li>
+                <li>Add a warning if no motion is imported.</li>
+                <li>Add a loading screen during the transition from split view to coach UI.</li>
+                <li>Add in an unhide UI button when hidden.</li>
+                <li>Add the hide button to the tutorial.</li>
+                <li>
+                  Add a highlight to show where user last clicked:
+                  <ul class="roadmap-nested-list">
+                    <li>If the user last clicked on the coach screen, the coach motion will be imported back to the coach UI when returning.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
-              <strong>Motion Editor:</strong>
+              <strong>Motion editor:</strong>
               <ul class="roadmap-nested-list">
-                <li>Enable hover interaction to inspect tooltips across all controls.</li>
-                <li>Returning to the coach screen from the motion editor preserves active session without forcing a new session restart.</li>
-                <li><strong>Bug Fix:</strong> Fix a bug where if loop playback is turned off, motion continues playing past the trimmed section.</li>
+                <li>Enable hover to look at tooltip.</li>
+                <li>Returning to the coach screen from the motion editor doesn't start a new session.</li>
+                <li>
+                  <strong>Bug fix:</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>Fix a bug when loop is turned off, the motion continues playing after the trimmed section.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
-              <strong>Reposition All UI Tools:</strong> Realign action toolbar elements for faster access.
+              <strong>Reposition all the UI tools:</strong>
               <img src="images/v1-3-2-ui-tools.png" alt="Repositioned UI Tools: Hide All, Show All, Guide, Video" class="roadmap-media-inline-badge" />
             </li>
-            <li>Another potential UI overhaul evaluation.</li>
+            <li>Another UI overhaul(?)</li>
             <li>
-              <strong>Website:</strong> Add interactive animations and reposition key UI layout elements.
+              <strong>Website:</strong>
+              <ul class="roadmap-nested-list">
+                <li>Add in animation.</li>
+                <li>Reposition certain UI elements.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Automated motion detection system (Release 2):</strong>
+              <ul class="roadmap-nested-list">
+                <li>
+                  Add a button to trigger the detection system in motion editor:
+                  <ul class="roadmap-nested-list">
+                    <li>Start off with a run:
+                      <ul class="roadmap-nested-list">
+                        <li>System has the ability to detect a run.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Removal of the word &ldquo;alpha&rdquo; to just &ldquo;release [number]&rdquo; from feature in LeSoCo.</li>
+            <li>
+              <strong>Bug fix:</strong>
+              <ul class="roadmap-nested-list">
+                <li>Fix a bug where pressing space bar doesn't play motion in split screen.</li>
+                <li>Fix a bug where importing motion in trainee makes the motion be imported in both the trainee and coach split screen view.</li>
+                <li>Decrease the size of the motion playhead.</li>
+                <li>Moving &ldquo;coach_benchmark&rdquo; up to fit in the box.</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -154,27 +196,86 @@
         <div class="apple-milestone-card">
           <span class="roadmap-meta-badge">Upcoming Milestone</span>
           <h3 class="apple-milestone-title">Version 1.3.3</h3>
-          <span class="apple-milestone-target">Status: In Planning</span>
+          <span class="apple-milestone-target">Status: In Planning &bull; Compiled Executable</span>
           <ul class="apple-milestone-list">
             <li>Update version number to <code>1.3.3</code>.</li>
-            <li>Smart onboarding: interactive tutorial won't show up again if user has already completed it once.</li>
+            <li><code>LeSoCo_v1.3.3.exe</code> compiled standalone executable deployment.</li>
+            <li>The tutorial won't show up again if user has gone through it once.</li>
             <li>
-              <strong>Coach &amp; Trainee Split View Function (Alpha release 4):</strong>
+              Allow each feature window to snap to each other without compromise:
               <ul class="roadmap-nested-list">
-                <li>Hide the 3D character model when no motion capture file is imported.</li>
-                <li><strong>Bug Fix:</strong> When no motion is imported, returning back to coach UI previously displayed ghost motion.</li>
+                <li>Currently, only certain feature windows are allowed to snap automatically.</li>
               </ul>
             </li>
             <li>
-              <strong>Motion Editor:</strong>
+              <strong>Coach and trainee split view function (Release 4):</strong>
               <ul class="roadmap-nested-list">
-                <li>When trimming, scrubbing thumbnail preview tracks wherever cursor drag start/end points move.</li>
-                <li>Timeline visual states: trimmed-out sections are clearly greyed out.</li>
-                <li>Restrict playback control during tutorial sequences.</li>
+                <li>Make the character model not appear when no motion is imported.</li>
+                <li>Add the ability to move the camera view around.</li>
+                <li>
+                  <strong>Bug fix:</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>When no motion is imported, going back to the coach UI displays a motion.</li>
+                    <li>Remove unnecessary second unhide UI button.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
-              <strong>Website:</strong> Add official Terms &amp; Conditions and Privacy Policy documentation pages.
+              <strong>Motion editor:</strong>
+              <ul class="roadmap-nested-list">
+                <li>When the user trimmed, the thumbnail should follow where the start or end is following the cursor.</li>
+                <li>Timeline should be greyed out when trimmed out.</li>
+                <li>User should be unable to play motion when in tutorial.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Website:</strong>
+              <ul class="roadmap-nested-list">
+                <li>Add terms and conditions.</li>
+                <li>Add privacy policy.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Automated motion detection system (Release 3):</strong>
+              <ul class="roadmap-nested-list">
+                <li>More updates to detect a run.</li>
+                <li>A system to detect a preparation phase.</li>
+                <li>
+                  Implement a color-coded section for each phase for user to clearly identify each motion stage:
+                  <ul class="roadmap-nested-list">
+                    <li>No color for no motion or not part of the four stage motion</li>
+                    <li><span class="stage-dot red"></span><strong>Red</strong> for run</li>
+                    <li><span class="stage-dot yellow"></span><strong>Yellow</strong> for preparation</li>
+                    <li><span class="stage-dot green"></span><strong>Green</strong> for the kick/contact with ball</li>
+                    <li><span class="stage-dot blue"></span><strong>Blue</strong> for follow-through</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Bug fix:</strong>
+              <ul class="roadmap-nested-list">
+                <li>
+                  When user imports trainee motion data, it will only be on the trainee tab:
+                  <ul class="roadmap-nested-list">
+                    <li>Switching to coach tab will display an error message telling the user to import in coach data.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Coach and trainee split screen view:</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>Fix a bug where clicking the reset button doesn't reset the session.</li>
+                    <li>Fix a bug where no motion is ever imported but motion is detected in the coach UI or split screen.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Motion editor:</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>Fix a bug where no motion is imported but returning to coach UI from editor shows motion is imported.</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -187,24 +288,53 @@
           <ul class="apple-milestone-list">
             <li>Update version number to <code>1.3.4</code>.</li>
             <li>
-              <strong>Coach &amp; Trainee Split View Function (Alpha release 5):</strong>
+              <strong>Coach and trainee split view function (Release 5):</strong>
               <ul class="roadmap-nested-list">
-                <li>Add athlete height adjustment feature for visual calibration.</li>
-                <li>When importing motion in Coach UI, opening split screen only imports coach motion; trainee motion must be imported separately.</li>
+                <li>Add a height feature.</li>
+                <li>
+                  When user imports a motion in the coach UI, opening split screen function will only import the coach motion, not the trainee:
+                  <ul class="roadmap-nested-list">
+                    <li>Trainee motion will have to be imported separately or vice versa.</li>
+                  </ul>
+                </li>
+                <li>When in &ldquo;Hide UI&rdquo; mode, pressing play without a motion imported will give an error.</li>
+                <li>
+                  <strong>Bug fix:</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>Fix a bug where pressing play on a motion hides the UI.</li>
+                    <li>Fix a bug where importing two completely different motion clips will bug out and stop playing the motion.</li>
+                    <li>Fix a bug where importing a motion doesn't show the character model.</li>
+                    <li>Fix animation when hiding UI.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
-              <strong>Motion Editor:</strong>
+              <strong>Motion editor:</strong>
               <ul class="roadmap-nested-list">
-                <li>Guide auto-opens upon first interaction.</li>
-                <li>Update guide close control to a clear, recognizable <em>"X"</em> button.</li>
-                <li>Resize each feature icon/logo during the tutorial walkthrough.</li>
-                <li>Fix tutorial frame jitter so viewport remains stationary when cycling editor tools.</li>
-                <li>Reposition primary action buttons to enhance visibility and contrast.</li>
+                <li>The guide will show up when first pressed.</li>
+                <li>Change the close guide to be a proper &ldquo;X&rdquo;.</li>
+                <li>Resize each logo associated to each feature during the tutorial walkthrough.</li>
+                <li>The tutorial doesn't move around when moving through each motion editor feature.</li>
+                <li>Move some buttons position to improve visibility.</li>
+                <li>
+                  <strong>Automated motion detection system (Release 4):</strong>
+                  <ul class="roadmap-nested-list">
+                    <li>More updates to detect a run.</li>
+                    <li>More updates to detect a preparation.</li>
+                    <li>A system to detect a kick.</li>
+                    <li>If user clicks on the &ldquo;auto detect&rdquo; button, going back to the coach UI will display a pop-up showing the different motion stages.</li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
-              <strong>Website:</strong> Remove obsolete version timeline, add fluid visual effects, and update Privacy Policy to explicitly include Sony Mocopi data practices.
+              <strong>Website:</strong>
+              <ul class="roadmap-nested-list">
+                <li>Remove version timeline.</li>
+                <li>Add in visual effects.</li>
+                <li>Edit privacy policy to include mocopi's privacy policy.</li>
+              </ul>
             </li>
             <li><code>LeSoCo.v.1.3.4.exe</code> compiled standalone executable deployment.</li>
           </ul>
@@ -214,152 +344,43 @@
         <div class="apple-milestone-card">
           <span class="roadmap-meta-badge">Target Horizon</span>
           <h3 class="apple-milestone-title">Version 1.3.5</h3>
-          <span class="apple-milestone-target">Status: Scheduled</span>
+          <span class="apple-milestone-target">Status: Scheduled &bull; Compiled Executable</span>
           <ul class="apple-milestone-list">
             <li>Update version number to <code>1.3.5</code>.</li>
-            <li><code>LeSoCo.v.1.3.5.exe</code> compiled executable deployment.</li>
+            <li><code>LeSoCo.v.1.3.5.exe</code> compiled standalone executable deployment.</li>
             <li>
-              <strong>Website:</strong> Reposition call-to-action buttons on homepage to center alignment.
-            </li>
-          </ul>
-        </div>
-
-        <!-- ================= Incremental Releases Grid Block (1.3.6 – 1.3.10) ================= -->
-        <div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 </h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.6:</strong> Update version number to 1.3.6 &bull; <code>LeSoCo.v.1.3.6.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-		<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.7:</strong> Update version number to 1.3.7 &bull; <code>LeSoCo.v.1.3.7.exe</code> release.
-            </li>
-        </div>
-		
-		<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.8:</strong> Update version number to 1.3.8 &bull; <code>LeSoCo.v.1.3.8.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-				<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.6:</strong> Update version number to 1.3.6 &bull; <code>LeSoCo.v.1.3.6.exe</code> release.
+              <strong>Website:</strong>
+              <ul class="roadmap-nested-list">
+                <li>Reposition button on homepage to center.</li>
+              </ul>
             </li>
             <li>
-              <strong>Version 1.3.7:</strong> Update version number to 1.3.7 &bull; <code>LeSoCo.v.1.3.7.exe</code> release.
+              <strong>Coach and trainee split view function (Release 6):</strong>
+              <ul class="roadmap-nested-list">
+                <li>
+                  Add a different camera position feature:
+                  <ul class="roadmap-nested-list">
+                    <li>To view where the user's foot is when the ball is touched.</li>
+                  </ul>
+                </li>
+                <li>Add in a pop-up for user to input their weight, age, height.</li>
+              </ul>
             </li>
             <li>
-              <strong>Version 1.3.8:</strong> Update version number to 1.3.8 &bull; <code>LeSoCo.v.1.3.8.exe</code> release.
+              <strong>Automated motion detection system (Release 5):</strong>
+              <ul class="roadmap-nested-list">
+                <li>More updates to detect a run.</li>
+                <li>More updates to detect a preparation.</li>
+                <li>More updates to detect a kick.</li>
+                <li>A system to detect a follow-through.</li>
+                <li>
+                  Implement a motion detection backward and forward frame system into motion editor:
+                  <ul class="roadmap-nested-list">
+                    <li>The system will allow user to press the button and allow them to jump to the first frame of each stage motion.</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li>
-              <strong>Version 1.3.9:</strong> Update version number to 1.3.9 &bull; <code>LeSoCo.v.1.3.9.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.10:</strong> Update version number to 1.3.10 &bull; <code>LeSoCo.v.1.3.10.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-				<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.6:</strong> Update version number to 1.3.6 &bull; <code>LeSoCo.v.1.3.6.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.7:</strong> Update version number to 1.3.7 &bull; <code>LeSoCo.v.1.3.7.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.8:</strong> Update version number to 1.3.8 &bull; <code>LeSoCo.v.1.3.8.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.9:</strong> Update version number to 1.3.9 &bull; <code>LeSoCo.v.1.3.9.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.10:</strong> Update version number to 1.3.10 &bull; <code>LeSoCo.v.1.3.10.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-				<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.6:</strong> Update version number to 1.3.6 &bull; <code>LeSoCo.v.1.3.6.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.7:</strong> Update version number to 1.3.7 &bull; <code>LeSoCo.v.1.3.7.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.8:</strong> Update version number to 1.3.8 &bull; <code>LeSoCo.v.1.3.8.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.9:</strong> Update version number to 1.3.9 &bull; <code>LeSoCo.v.1.3.9.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.10:</strong> Update version number to 1.3.10 &bull; <code>LeSoCo.v.1.3.10.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-				<div class="apple-milestone-card">
-          <span class="roadmap-meta-badge">Incremental Pipeline</span>
-          <h3 class="apple-milestone-title">Versions 1.3.6 – 1.3.10</h3>
-          <span class="apple-milestone-target">Status: Continuous Delivery Pipeline</span>
-          <ul class="apple-milestone-list">
-            <li>
-              <strong>Version 1.3.6:</strong> Update version number to 1.3.6 &bull; <code>LeSoCo.v.1.3.6.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.7:</strong> Update version number to 1.3.7 &bull; <code>LeSoCo.v.1.3.7.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.8:</strong> Update version number to 1.3.8 &bull; <code>LeSoCo.v.1.3.8.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.9:</strong> Update version number to 1.3.9 &bull; <code>LeSoCo.v.1.3.9.exe</code> release.
-            </li>
-            <li>
-              <strong>Version 1.3.10:</strong> Update version number to 1.3.10 &bull; <code>LeSoCo.v.1.3.10.exe</code> release.
-            </li>
-          </ul>
-        </div>
-		
-		
-
-        <!-- ================= Version 1.4 ================= -->
-        <div class="apple-milestone-card featured">
-          <span class="roadmap-meta-badge">Major Milestone</span>
-          <h3 class="apple-milestone-title">Version 1.4</h3>
-          <span class="apple-milestone-target">Target Horizon: Major Release</span>
-          <ul class="apple-milestone-list">
-            <li>Update version number to <code>1.4</code>.</li>
-            <li><code>LeSoCo.v.1.4.exe</code> compiled standalone production release.</li>
-            <li>Expanded biomechanical analysis suite and next-generation multi-IMU sensor synchronization.</li>
           </ul>
         </div>
 
@@ -371,11 +392,15 @@
         <div class="apple-specs-grid">
           <div class="apple-spec-col">
             <span class="apple-spec-key">Current Milestone</span>
-            <span class="apple-spec-val" style="color: var(--apple-amber);">Version 1.3.2</span>
+            <span class="apple-spec-val" style="color: var(--apple-amber);">Version 1.3.3</span>
           </div>
           <div class="apple-spec-col">
-            <span class="apple-spec-key">Next Major Target</span>
-            <span class="apple-spec-val">Version 1.4</span>
+            <span class="apple-spec-key">Target Horizon</span>
+            <span class="apple-spec-val">Version 1.3.5</span>
+          </div>
+          <div class="apple-spec-col">
+            <span class="apple-spec-key">Last Updated</span>
+            <span class="apple-spec-val" style="color: var(--apple-blue-link);">November 12, 2026</span>
           </div>
           <div class="apple-spec-col">
             <span class="apple-spec-key">Live Tracker</span>
@@ -432,7 +457,7 @@
       </div>
       <div class="apple-footer-bottom">
         <div>
-          Copyright &copy; <span id="year"></span> LeSoCo Inc. All rights reserved.
+          Copyright &copy; <span id="year"></span> LeSoCo Inc. All rights reserved. &bull; Last updated: November 12, 2026
         </div>
         <div class="apple-footer-links">
           <a href="index.html">Overview</a>
