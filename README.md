@@ -12,6 +12,8 @@
 
 [Web Portal](https://sniffuntidypond.github.io/LeSoCo/) • [Living Roadmap](https://monogr.ph/s/4Dr8yxLzxa) • [Repository](https://github.com/sniffuntidypond/LeSoCo.git)
 
+_Last Updated: November 12, 2026_
+
 </div>
 
 ---
@@ -198,20 +200,28 @@ LeSoCo/
 
 Track live feature development and active sprint tickets on our official [Living Monograph Roadmap](https://monogr.ph/s/4Dr8yxLzxa).
 
-- **v1.3.1 (Current)**:
-  - 4K Studio Workspace with DaVinci Resolve-inspired UI.
-  - 50/50 Dual-View Split-Screen with synchronized camera orbits.
-  - Virtual JVC Jog-Shuttle scrubbing (`-5x` to `+5x`).
-  - Sub-degree joint angle telemetry and automated posture correction feedback.
-  - 3D spatial keyframe annotation engine.
-- **v1.4 (Q1 2027)**:
-  - Multi-IMU automated wireless zero-drift auto-calibration (12+ sensor streams).
-  - AI-driven posture diagnostics for high-velocity motions.
-  - Lossless export pipeline to standard BVH, FBX, and CSV telemetry.
-  - 3D Kinematic ribbon trajectory tracing with acceleration heatmaps.
-- **v2.0 (Mid 2027)**:
-  - Multi-user collaborative XR coaching rooms.
-  - Convai NeuroSync interactive conversational AI digital human avatar coaches.
+- **v1.3.2 (Active Sprint)**:
+  - Coach & trainee split view function (Release 3) with loading transitions and UI unhide controls.
+  - Dedicated quit application mechanism and dynamic responsive UI scaling.
+  - Motion editor tooltip hover, session persistence, and loop playback fixes.
+  - Automated motion detection system (Release 2) initiating automated run detection.
+  - Action toolbar repositioning and playhead size optimizations.
+- **v1.3.3 (In Planning)**:
+  - Standalone `LeSoCo_v1.3.3.exe` desktop deployment.
+  - Persistent tutorial completion memory and window snap mechanics.
+  - Coach & trainee split view function (Release 4) with dynamic 3D camera orbiting.
+  - Automated motion detection system (Release 3) with 4-stage color coding (Run, Preparation, Kick, Follow-through).
+  - Official Terms & Conditions and Privacy Policy web documentation.
+- **v1.3.4 (In Planning)**:
+  - Standalone `LeSoCo.v.1.3.4.exe` desktop deployment.
+  - Coach & trainee split view function (Release 5) with athlete height calibration.
+  - Motion editor guide walkthrough, visual polish, and repositioned controls.
+  - Automated motion detection system (Release 4) with stage pop-up reporting.
+- **v1.3.5 (Target Horizon)**:
+  - Standalone `LeSoCo.v.1.3.5.exe` desktop deployment.
+  - Coach & trainee split view function (Release 6) with contact-point camera position and athlete anthropometric profile input (age, height, weight).
+  - Automated motion detection system (Release 5) with bidirectional frame stepper across motion stages.
+  - Homepage call-to-action button centering.
 
 ---
 
