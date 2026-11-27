@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![LeSoCo Version](https://img.shields.io/badge/Version-v1.3.1-blue.svg?style=flat-square)
+![LeSoCo Version](https://img.shields.io/badge/Version-v1.3.7-blue.svg?style=flat-square)
 ![Engine](https://img.shields.io/badge/Engine-Unity%202023%20URP-black.svg?style=flat-square)
 ![Tracking](https://img.shields.io/badge/MoCap-Sony%20Mocopi%20(6--12%20IMUs)-orange.svg?style=flat-square)
 ![Format](https://img.shields.io/badge/Container-.lsc%20Kinematics-green.svg?style=flat-square)
